@@ -24,5 +24,84 @@ GROUP BY occupation
 ORDER BY AVG(quality_sleep) DESC;
 ```
 
-3. sdvdf
-4. asdfsd
+2. Which occupation have longest sleep duration?
+```sql
+SELECT occupation, AVG(sleep_duration) FROM sleep_habit
+GROUP BY occupation
+ORDER BY AVG(sleep_duration) DESC;
+```
+
+3. Which occupation have lowest stress level?
+```sql
+SELECT occupation, AVG(stress_level) FROM sleep_habit
+GROUP BY occupation
+ORDER BY AVG(stress_level) ASC;
+```
+
+4. Which occupation have most average daily steps?
+```sql
+SELECT occupation, AVG(daily_step) FROM sleep_habit
+GROUP BY occupation
+ORDER BY AVG(daily_step) DESC;
+```
+
+5. Which occupation have higher average physical action level?
+```sql
+SELECT occupation, AVG(physical_act_level) FROM sleep_habit
+GROUP BY occupation
+ORDER BY AVG(physical_act_level) DESC;
+```
+
+6. How many females and males from table?
+```sql
+SELECT gender, COUNT(*) AS total
+FROM sleep_habit
+GROUP BY gender;
+```
+
+7. Which gender have longest average sleep duration?
+```sql
+SELECT gender, AVG(sleep_duration) FROM sleep_habit
+GROUP BY gender
+ORDER BY AVG(sleep_duration) DESC;
+```
+
+8. Which gender have good quality of sleep based on average?
+```sql
+SELECT gender, AVG(quality_sleep) FROM sleep_habit
+GROUP BY gender
+ORDER BY AVG(quality_sleep) DESC;
+```
+
+9. Which gender most stress out by average?
+```sql
+SELECT gender, AVG(stress_level) FROM sleep_habit
+GROUP BY gender
+ORDER BY AVG(stress_level) DESC;
+```
+
+10. How much people suffering from sleep_disorder?
+```sql
+SELECT sleep_disorder, COUNT(*) AS total
+FROM sleep_habit
+GROUP BY sleep_disorder;
+```
+
+11. How much people that are obese and overweight suffering from sleep_disorder?
+```sql
+WITH obese_and_over AS (
+SELECT * FROM sleep_habit
+WHERE bmi = 'obese' OR bmi='overweight'
+)
+SELECT sleep_disorder, COUNT(*) FROM obese_and_over
+GROUP BY sleep_disorder;
+```
+
+12. which age have highest average stress level?
+```sql
+SELECT age, AVG(stress_level) FROM sleep_habit
+GROUP BY age
+ORDER BY AVG(stress_level) DESC
+LIMIT 10;
+```
+
