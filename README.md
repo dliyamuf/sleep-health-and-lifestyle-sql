@@ -23,6 +23,8 @@ SELECT occupation, AVG(quality_sleep) FROM sleep_habit
 GROUP BY occupation
 ORDER BY AVG(quality_sleep) DESC;
 ```
+![]()
+
 
 2. Which occupation have longest sleep duration?
 ```sql
@@ -104,4 +106,20 @@ GROUP BY age
 ORDER BY AVG(stress_level) DESC
 LIMIT 10;
 ```
+
+## **INSIGHT**
+- Engineer has highest quality of sleep with average 8.4 with 3.9 average level of stress. Meanwhile, sales' quality of sleep is the lowest with average 4 and average of stress level 8.
+- Nurse has physical activities level and daily step highest with so so good quality of sleep.
+- Male's duration of sleep is shorter than female with stress level higher and good quality lower.
+- 58.5% of people do not suffering from sleeping disorder.
+- 88% people with bmi overwight and obese has sleeping disorder (sleep apnea or insomnia).
+- People with age 28 and 34 has highest stress level (8).
+
+## **CONCLUSION**
+- The level of stress and good quality of sleep has strong relationship. People with stress susceptive with bad quality of sleep.
+- Higher good quality of sleep means the sleep duration is longer.
+- Physical activity (daily step and physical action level) with good quality of sleep have weak correlation.
+- People with age between late 20s and early 30s susceptive with stress.
+
+
 
