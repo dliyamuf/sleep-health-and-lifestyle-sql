@@ -56,9 +56,6 @@ WHERE bmi = 'obese' OR bmi='overweight'
 SELECT sleep_disorder, COUNT(*) FROM obese_and_over
 GROUP BY sleep_disorder;
 
--- what's average age of people
-SELECT AVG(age) FROM sleep_habit;
-
 -- which age have highest average stress level?
 SELECT age, AVG(stress_level) FROM sleep_habit
 GROUP BY age
