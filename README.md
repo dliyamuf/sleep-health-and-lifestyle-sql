@@ -18,7 +18,11 @@ The dataset is [Sleep Health and Lifestyle](https://www.kaggle.com/datasets/uom1
 
 ## **Data Exploration**
 1. Which occupation have highest average quality of sleep?
-
+```sql
+SELECT occupation, AVG(quality_sleep) FROM sleep_habit
+GROUP BY occupation
+ORDER BY AVG(quality_sleep) DESC;
+```
 
 3. sdvdf
 4. asdfsd
