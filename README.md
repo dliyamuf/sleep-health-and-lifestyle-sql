@@ -119,18 +119,12 @@ LIMIT 10;
 ![question1](https://github.com/dliyamuf/sleep-health-and-lifestyle-sql/blob/main/images/question12.png)
 
 ## **INSIGHT**
-- Engineer has highest quality of sleep with average 8.4 with 3.9 average level of stress. Meanwhile, sales' quality of sleep is the lowest with average 4 and average of stress level 8.
-- Nurse has physical activities level and daily step highest with so so good quality of sleep.
-- Male's duration of sleep is shorter than female with stress level higher and good quality lower.
-- 58.5% of people do not suffering from sleeping disorder.
-- 88% people with bmi overwight and obese has sleeping disorder (sleep apnea or insomnia).
-- People with age 28 and 34 has highest stress level (8).
-
-## **CONCLUSION**
-- The level of stress and good quality of sleep has strong relationship. People with stress susceptive with bad quality of sleep.
-- Higher good quality of sleep means the sleep duration is longer.
-- Physical activity (daily step and physical action level) with good quality of sleep have weak correlation.
-- People with age between late 20s and early 30s susceptive with stress.
+- Engineers have the highest quality of sleep, averaging 8.4 hours of sleep with an average 3.9 stress level. Meanwhile, sales professionals have the lowest quality of sleep, averaging only 4 hours/day with a high average stress level of 8. 
+- Nurses have the highest level of physical activities level and daily steps with a moderately good quality of sleep.
+- Males have a shorter sleep duration than females, with higher stress level and lower sleep quality.
+- 58.5% of people do not suffer from sleep disorders.
+- 88% of individuals who are overweight or obese (based on BMI) experience sleep disorders (sleep apnea or insomnia).
+- People aged 28 and 34 have the highest average stress level, rated 8.
 
 
 
